@@ -27,6 +27,8 @@ Route::post('/posts', 'PostController@store');
 
 Route::get('/posts/{post}', 'PostController@show');
 
+Route::post('/posts/store_image', 'PostController@store_image');
+
 Route::get('/posts/tags/{tag}', 'TagsController@index');
 
 Route::get('/register', 'RegistrationController@create');

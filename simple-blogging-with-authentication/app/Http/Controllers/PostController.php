@@ -7,6 +7,7 @@ use App\Post;
 use Auth;
 use DB;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Input;
 
 class PostController extends Controller
 {   
@@ -62,5 +63,10 @@ class PostController extends Controller
         ]);*/
 
     	return redirect('/');
+    }
+
+    public function store_image(Request $request){
+        $file = Input::file('images');
+        echo json_encode($file->getClientOriginalName());
     }
 }
