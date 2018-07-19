@@ -1,0 +1,17 @@
+{
+    "name": "jobayerccj/SimplePackage",
+    "description": "First package",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "jobayerccj\\SimplePackage\\": "src/"
+        }
+    },
+	"autoload-dev": {
+        "psr-4": {
+            "jobayerccj\\SimplePackage\\Test\\": "tests/"
+        }
+    }
+}

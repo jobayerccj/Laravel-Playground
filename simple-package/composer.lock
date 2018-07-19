@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "content-hash": "341716d51de3e71b79963f842227b320",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -452,6 +452,57 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "jobayerccj/SimplePackage",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "simplepackage1",
+                "reference": "aaf2aa8c43a9dcc844a11e5457bf4311fc439c4a",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jobayerccj\\SimplePackage\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "jobayerccj\\SimplePackage\\Test\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "First package",
+            "transport-options": {
+                "symlink": false
+            }
+        },
+        {
+            "name": "jobayerccj/Skebby",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "skebby",
+                "reference": "449f5185f4e337e687ffb95ec8bed876a0cc3b0f",
+                "shasum": null
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "jobayerccj\\Skebby\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "package for skebby sms gateway",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "laravel/framework",
@@ -3989,7 +4040,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jobayerccj/simplepackage": 20,
+        "jobayerccj/skebby": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
