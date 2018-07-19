@@ -3,7 +3,7 @@ namespace jobayerccj\SimplePackage;
 class SimplePackage
 {
     /**
-     * Multiplies the two given numbers
+     * Sum the two given numbers
      * @param int $a
      * @param int $b
      * @return int
